@@ -1,6 +1,4 @@
 # Multi-Container Runtime
-# Multi-Container Runtime
-
 ## 1. Team Information
 
 |           Name          |      SRN      |
