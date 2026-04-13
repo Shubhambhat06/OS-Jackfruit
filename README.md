@@ -95,8 +95,7 @@ dmesg | tail -3
 | 2 | `engine ps` output with both containers listed |
 <img width="875" height="300" alt="2" src="Screenshot from 2026-04-13 12-33-13.png" />
 
-| 3 | Log file contents from `engine logs alpha` |
-<img width="1236" height="280" alt="3" src="https://github.com/user-attachments/assets/5b017bf9-9ead-43f5-bd9e-cf68fde0fbbb" />
+
 
 
 | 4 | `engine stop alpha` command and supervisor response |
