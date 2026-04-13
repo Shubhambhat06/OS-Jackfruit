@@ -3,8 +3,8 @@
 
 |           Name          |      SRN      |
 |-------------------------|---------------|
-| Arin Singh              | PES1UG24CS079 |
-| Anshdeep Singh Sachdeva | PES1UG24CS070 |
+| Shubham Dattatraya Bhat          | PES1UG24AM273 |
+| Siddhant Khurdiya | PES1UG24AM275 |
 
 ---
 
