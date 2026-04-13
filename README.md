@@ -571,7 +571,7 @@ Both containers run the same `cpu_hog 30` workload simultaneously. One has defau
 
 | Container | Nice | Measured real time |
 |-----------|------|--------------------|
-| exp1      | 0    | 19ms             |
+| exp1      | 0    | 19s             |
 | exp2      | 10   | 24s            |
 
 **Interpretation:** CFS weight for nice=0 is 1024; for nice=10 it is 110. On a single core this means exp1 gets approximately 1024/(1024+110) ≈ 90% of CPU time and exp2 gets ≈10%. exp2's real time should be roughly 9× exp1's if both run to completion. On a multi-core system the effect is less pronounced because each container may run on a separate core.
@@ -580,7 +580,7 @@ Both containers run the same `cpu_hog 30` workload simultaneously. One has defau
 
 | Container | Type      | Workload        | Measured real time |
 |-----------|-----------|-----------------|--------------------|
-| cpuexp    | CPU-bound | cpu_hog 20      | 15ms            |
-| ioexp     | I/O-bound | io_pulse 40 200 | 18ms            |
+| cpuexp    | CPU-bound | cpu_hog 20      | 15s            |
+| ioexp     | I/O-bound | io_pulse 40 200 | 18s            |
 
 **Interpretation:** The I/O-bound workload completed in approximately the same time as if running alone because it spent most of its time sleeping in `usleep()`. CFS correctly identified it as a low-vruntime process and gave it immediate CPU access when it woke up. This demonstrates CFS's design goal: I/O-bound processes should not be penalised for yielding the CPU voluntarily.
