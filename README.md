@@ -116,9 +116,9 @@ exp1 vs exp2 based on priority:
 <img width="1049" height="352" alt="7 1 3" src="Screenshot from 2026-04-13 15-02-28.png" />
 
 cpuexp vs ioexp based on cpu bound and i/o bound process:
-<img width="1001" height="134" alt="7 2 1" src="Screenshot from 2026-04-13 15-03-48.png" />
+<img width="1001" height="334" alt="7 2 1" src="Screenshot from 2026-04-13 15-03-48.png" />
 
-<img width="934" height="157" alt="7 2 2" src="Screenshot from 2026-04-13 15-04-00.png" />
+<img width="934" height="457" alt="7 2 2" src="Screenshot from 2026-04-13 15-04-00.png" />
 
 
 
