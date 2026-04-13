@@ -107,7 +107,7 @@ dmesg | tail -3
 | 5 | `dmesg` showing HARD LIMIT kill + `engine ps` showing hard_limit_killed |
 <img width="994" height="175" alt="6" src="https://github.com/user-attachments/assets/c53499d0-da54-482b-924a-5eeb5e1407b5" />
 
-| 5 | `time` output for exp1 vs exp2 and cpuexp vs ioexp showing different completion times |
+| 6 | `time` output for exp1 vs exp2 and cpuexp vs ioexp showing different completion times |
 exp1 vs exp2 based on priority:
 <img width="858" height="350" alt="7 1 1" src="Screenshot from 2026-04-13 15-00-01.png" />
 
@@ -116,13 +116,13 @@ exp1 vs exp2 based on priority:
 <img width="1049" height="352" alt="7 1 3" src="Screenshot from 2026-04-13 15-02-28.png" />
 
 cpuexp vs ioexp based on cpu bound and i/o bound process:
-<img width="1001" height="134" alt="7 2 1" src="https://github.com/user-attachments/assets/4066320b-c110-4a41-bfa1-3a62086d15da" />
+<img width="1001" height="134" alt="7 2 1" src="Screenshot from 2026-04-13 15-03-48.png" />
 
-<img width="934" height="157" alt="7 2 2" src="https://github.com/user-attachments/assets/cd7e806c-8728-4507-8eda-ed860c84dde8" />
+<img width="934" height="157" alt="7 2 2" src="Screenshot from 2026-04-13 15-04-00.png" />
 
-<img width="934" height="157" alt="7 2 3" src="https://github.com/user-attachments/assets/8a21b273-e7a9-42ea-81c0-612e883b7b74" />
 
-| 8 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
+
+| 7 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
 <img width="997" height="342" alt="8 1" src="Screenshot from 2026-04-13 13-01-52.png" />
 
 <img width="932" height="340" alt="8 2" src="Screenshot from 2026-04-13 13-03-13.png" />
