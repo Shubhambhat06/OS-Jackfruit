@@ -498,8 +498,8 @@ Both containers ran the same `cpu_hog` workload (a tight compute loop) simultane
 
 | Container | Nice value | Real time |
 |-----------|-----------|-----------|
-| exp1      | 0         |   19s    |
-| exp2      | 10        | 24s   |
+| exp1      | 0         |   19ms    |
+| exp2      | 10        | 24ms   |
 
 exp2 took **66% longer** than exp1 for identical work. The reason is the weight
 difference. When both are runnable simultaneously, CFS gives exp1 a share of
@@ -514,8 +514,8 @@ the priority difference while ensuring both processes make forward progress.
 
 | Container | Type      | Workload        | Real time |
 |-----------|-----------|-----------------|-----------|
-| cpuexp    | CPU-bound | cpu_hog (20s)   | 15s   |
-| ioexp     | I/O-bound | io_pulse (40 iter) | 18s |
+| cpuexp    | CPU-bound | cpu_hog (20s)   | 15ms   |
+| ioexp     | I/O-bound | io_pulse (40 iter) | 18ms |
 
 The I/O-bound process (`io_pulse`) calls `usleep()` between every write, spending most
 of its time sleeping rather than using CPU. When a sleeping process wakes up in CFS,
@@ -571,8 +571,8 @@ Both containers run the same `cpu_hog 30` workload simultaneously. One has defau
 
 | Container | Nice | Measured real time |
 |-----------|------|--------------------|
-| exp1      | 0    | 9.669s             |
-| exp2      | 10   | 16.058s            |
+| exp1      | 0    | 19ms             |
+| exp2      | 10   | 24s            |
 
 **Interpretation:** CFS weight for nice=0 is 1024; for nice=10 it is 110. On a single core this means exp1 gets approximately 1024/(1024+110) ≈ 90% of CPU time and exp2 gets ≈10%. exp2's real time should be roughly 9× exp1's if both run to completion. On a multi-core system the effect is less pronounced because each container may run on a separate core.
 
@@ -580,7 +580,7 @@ Both containers run the same `cpu_hog 30` workload simultaneously. One has defau
 
 | Container | Type      | Workload        | Measured real time |
 |-----------|-----------|-----------------|--------------------|
-| cpuexp    | CPU-bound | cpu_hog 20      | 14.248s            |
-| ioexp     | I/O-bound | io_pulse 40 200 | 11.447s            |
+| cpuexp    | CPU-bound | cpu_hog 20      | 15ms            |
+| ioexp     | I/O-bound | io_pulse 40 200 | 18ms            |
 
 **Interpretation:** The I/O-bound workload completed in approximately the same time as if running alone because it spent most of its time sleeping in `usleep()`. CFS correctly identified it as a low-vruntime process and gave it immediate CPU access when it woke up. This demonstrates CFS's design goal: I/O-bound processes should not be penalised for yielding the CPU voluntarily.
