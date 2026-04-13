@@ -111,9 +111,9 @@ dmesg | tail -3
 exp1 vs exp2 based on priority:
 <img width="858" height="350" alt="7 1 1" src="Screenshot from 2026-04-13 15-00-01.png" />
 
-<img width="954" height="135" alt="7 1 2" src="Screenshot from 2026-04-13 15-02-17.png" />
+<img width="954" height="345" alt="7 1 2" src="Screenshot from 2026-04-13 15-02-17.png" />
 
-<img width="1049" height="152" alt="7 1 3" src="Screenshot from 2026-04-13 15-02-28.png" />
+<img width="1049" height="352" alt="7 1 3" src="Screenshot from 2026-04-13 15-02-28.png" />
 
 cpuexp vs ioexp based on cpu bound and i/o bound process:
 <img width="1001" height="134" alt="7 2 1" src="https://github.com/user-attachments/assets/4066320b-c110-4a41-bfa1-3a62086d15da" />
