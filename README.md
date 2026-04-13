@@ -498,8 +498,8 @@ Both containers ran the same `cpu_hog` workload (a tight compute loop) simultane
 
 | Container | Nice value | Real time |
 |-----------|-----------|-----------|
-| exp1      | 0         | 9.669s    |
-| exp2      | 10        | 16.058s   |
+| exp1      | 0         |   19s    |
+| exp2      | 10        | 24s   |
 
 exp2 took **66% longer** than exp1 for identical work. The reason is the weight
 difference. When both are runnable simultaneously, CFS gives exp1 a share of
@@ -514,8 +514,8 @@ the priority difference while ensuring both processes make forward progress.
 
 | Container | Type      | Workload        | Real time |
 |-----------|-----------|-----------------|-----------|
-| cpuexp    | CPU-bound | cpu_hog (20s)   | 14.248s   |
-| ioexp     | I/O-bound | io_pulse (40 iter) | 11.447s |
+| cpuexp    | CPU-bound | cpu_hog (20s)   | 15s   |
+| ioexp     | I/O-bound | io_pulse (40 iter) | 18s |
 
 The I/O-bound process (`io_pulse`) calls `usleep()` between every write, spending most
 of its time sleeping rather than using CPU. When a sleeping process wakes up in CFS,
