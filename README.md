@@ -86,7 +86,7 @@ dmesg | tail -3
 | # | What it shows |
 |---|---|
 
-<img width="1100" height="248" alt="0" src="Screenshot from 2026-04-13 12-30-03.png" />
+<img width="1100" height="400" alt="0" src="Screenshot from 2026-04-13 12-30-03.png" />
 
 <img width="892" height="132" alt="1 1" src="https://github.com/user-attachments/assets/cabcd951-61e0-40f2-a71b-c2c30d32fe9e" />
 
