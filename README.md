@@ -88,7 +88,7 @@ dmesg | tail -3
 
 <img width="1100" height="400" alt="0" src="Screenshot from 2026-04-13 12-30-03.png" />
 
-<img width="892" height="132" alt="1 1" src="https://github.com/user-attachments/assets/cabcd951-61e0-40f2-a71b-c2c30d32fe9e" />
+<img width="892" height="132" alt="1 1" src="Screenshot from 2026-04-13 12-32-34.png" />
 
 | 1 | Two containers running under one supervisor |
 <img width="901" height="159" alt="1 2" src="https://github.com/user-attachments/assets/664f980b-0cc9-4992-a9bc-64959d4c093f" />
