@@ -104,10 +104,9 @@ dmesg | tail -3
 | 4 | `dmesg` showing SOFT LIMIT warning for memtest |
 <img width="1288" height="300" alt="5" src="Screenshot from 2026-04-13 13-01-52.png" />
 
-| 5 | `dmesg` showing HARD LIMIT kill + `engine ps` showing hard_limit_killed |
-<img width="994" height="175" alt="6" src="https://github.com/user-attachments/assets/c53499d0-da54-482b-924a-5eeb5e1407b5" />
 
-| 6 | `time` output for exp1 vs exp2 and cpuexp vs ioexp showing different completion times |
+
+| 5 | `time` output for exp1 vs exp2 and cpuexp vs ioexp showing different completion times |
 exp1 vs exp2 based on priority:
 <img width="858" height="350" alt="7 1 1" src="Screenshot from 2026-04-13 15-00-01.png" />
 
@@ -122,7 +121,7 @@ cpuexp vs ioexp based on cpu bound and i/o bound process:
 
 
 
-| 7 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
+| 6 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
 <img width="997" height="342" alt="8 1" src="Screenshot from 2026-04-13 13-01-52.png" />
 
 <img width="932" height="340" alt="8 2" src="Screenshot from 2026-04-13 13-03-13.png" />
