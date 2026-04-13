@@ -88,12 +88,12 @@ dmesg | tail -3
 
 <img width="1100" height="400" alt="0" src="Screenshot from 2026-04-13 12-30-03.png" />
 
-<img width="892" height="132" alt="1 1" src="Screenshot from 2026-04-13 12-32-34.png" />
+<img width="892" height="300" alt="1 1" src="Screenshot from 2026-04-13 12-32-34.png" />
 
 
 
 | 2 | `engine ps` output with both containers listed |
-<img width="875" height="123" alt="2" src="Screenshot from 2026-04-13 12-33-13.png" />
+<img width="875" height="300" alt="2" src="Screenshot from 2026-04-13 12-33-13.png" />
 
 | 3 | Log file contents from `engine logs alpha` |
 <img width="1236" height="280" alt="3" src="https://github.com/user-attachments/assets/5b017bf9-9ead-43f5-bd9e-cf68fde0fbbb" />
@@ -103,7 +103,7 @@ dmesg | tail -3
 <img width="974" height="140" alt="4" src="https://github.com/user-attachments/assets/79999a65-5de2-42bf-9678-faad76fa9a06" />
 
 | 5 | `dmesg` showing SOFT LIMIT warning for memtest |
-<img width="1288" height="213" alt="5" src="Screenshot from 2026-04-13 13-01-52.png" />
+<img width="1288" height="300" alt="5" src="Screenshot from 2026-04-13 13-01-52.png" />
 
 | 6 | `dmesg` showing HARD LIMIT kill + `engine ps` showing hard_limit_killed |
 <img width="994" height="175" alt="6" src="https://github.com/user-attachments/assets/c53499d0-da54-482b-924a-5eeb5e1407b5" />
